@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+
+log/
+!vendor/**/log
+
+convention
+
+*.log*
+
+config/config.yaml

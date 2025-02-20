@@ -1,0 +1,37 @@
+# FFmpeg配置
+ffmpeg:
+  # FFmpeg可执行文件路径
+  ffmpeg_path: "/usr/local/bin/ffmpeg"
+  # FFprobe可执行文件路径
+  ffprobe_path: "/usr/local/bin/ffprobe"
+
+# 视频切割配置
+video:
+  # 每个片段的最大时长（秒）
+  max_segment_duration: 10
+  # 输出文件名格式
+  output_name_format: "segment_%03d"
+  # 视频尺寸配置
+  resolution:
+    width: 1920
+    height: 1080
+    # 是否强制转换尺寸（即使原视频尺寸更大）
+    force_resize: true
+  # 视频质量配置
+  quality:
+    # CRF值 (0-51, 越小质量越好)
+    crf: 18
+    # 编码速度预设 (ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow)
+    preset: "medium"
+  # 字幕配置
+  subtitle:
+    # 是否保留字幕
+    keep: false
+    # 字幕编码
+    encoding: "UTF-8"
+  # 视频处理时间范围
+  time_range:
+    # 开始时间（秒）
+    start: 300
+    # 结束时间（秒），0表示到视频结束
+    end: 330
