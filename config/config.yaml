@@ -4,11 +4,13 @@ ffmpeg:
   ffmpeg_path: "/usr/local/bin/ffmpeg"
   # FFprobe可执行文件路径
   ffprobe_path: "/usr/local/bin/ffprobe"
+  # 基础命令
+  bash_path: "/bin/bash"
 
 # 视频切割配置
 video:
   # 每个片段的最大时长（秒）
-  max_segment_duration: 10
+  max_segment_duration: 60
   # 输出文件名格式
   output_name_format: "segment_%03d"
   # 视频尺寸配置
@@ -32,6 +34,6 @@ video:
   # 视频处理时间范围
   time_range:
     # 开始时间（秒）
-    start: 300
+    start: 0
     # 结束时间（秒），0表示到视频结束
-    end: 330
+    end: 0

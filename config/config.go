@@ -22,6 +22,7 @@ type Config struct {
 type FFmpegConfig struct {
 	FFmpegPath  string `yaml:"ffmpeg_path"`
 	FFprobePath string `yaml:"ffprobe_path"`
+	BashPath    string `yaml:"bash_path"`
 }
 
 // VideoConfig 视频处理相关配置

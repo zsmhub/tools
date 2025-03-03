@@ -11,5 +11,9 @@
 ## 使用方法
 
 ```bash
+# 视频分割
 go run cmd/video_splitter/main.go <输入视频路径> <输出目录>
+
+# 视频格式转换
+go run cmd/video_transfer/main.go <输入视频路径> <输出目录> <格式>
 ```

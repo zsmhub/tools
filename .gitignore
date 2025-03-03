@@ -9,3 +9,5 @@ convention
 *.log*
 
 config/config.yaml
+
+vendor

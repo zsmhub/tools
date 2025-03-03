@@ -22,7 +22,6 @@ func main() {
 
 	// 加载配置文件
 	configPath := "config/config.yaml"
-
 	if err := config.Load(configPath); err != nil {
 		fmt.Printf("加载配置文件失败: %v\n", err)
 		os.Exit(1)
