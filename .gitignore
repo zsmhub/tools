@@ -4,10 +4,8 @@
 log/
 !vendor/**/log
 
-convention
-
 *.log*
 
-config/config.yaml
-
 vendor
+
+.DS_Store
